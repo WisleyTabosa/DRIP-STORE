@@ -1,0 +1,203 @@
+/* Container principal */
+.banner-container {
+  width: 1303px;
+  max-width: 100%;
+  height: 400px;
+  display: flex;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 20px auto;
+}
+
+/* Metade da imagem */
+.banner-image {
+  flex: 1;
+}
+
+.banner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Metade do conteúdo */
+.banner-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  gap: 16px;
+}
+
+/* Estilos dos textos */
+.banner-content .warning {
+  color: #ff9900;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner-content .dark-gray {
+  color: #333333;
+  font-size: 28px;
+  margin: 0;
+}
+
+.banner-content .dark-gray-2 {
+  color: #666666;
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Botão */
+.primary-button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 12px 24px;
+  background-color: #111111;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.primary-button:hover {
+  background-color: #333333;
+}
+/* Dots indicadores */
+.dots {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dot.active {
+  background-color: #111;
+  transform: scale(1.2);
+}
+
+.dot:hover {
+  background-color: #666;
+}
+
+/* Container geral do carrossel */
+.carousel-container {
+  width: 1303px;
+  max-width: 100%;
+  position: relative;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+/* Slides */
+.carousel-slide {
+  display: none;
+  transition: opacity 0.5s ease;
+}
+
+.carousel-slide.active {
+  display: block;
+}
+
+/* Estrutura do banner */
+.banner-container {
+  display: flex;
+  height: 400px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Imagem */
+.banner-image {
+  flex: 1;
+}
+
+.banner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Conteúdo */
+.banner-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  gap: 16px;
+}
+
+/* Textos */
+.banner-content .warning {
+  color: #ff9900;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner-content .dark-gray {
+  color: #333333;
+  font-size: 28px;
+}
+
+.banner-content .dark-gray-2 {
+  color: #666666;
+  font-size: 18px;
+}
+
+/* Botão */
+.primary-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #111111;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.primary-button:hover {
+  background-color: #333333;
+}
+
+/* Botões de navegação */
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.nav-button.left {
+  left: 20px;
+}
+
+.nav-button.right {
+  right: 20px;
+}
+
+.nav-button:hover {
+  background-color: rgba(0,0,0,0.7);
+}
